@@ -9,14 +9,18 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: black;
+    background: url(download\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
 }
 .container{
     position: relative;
     width: 400px;
     height: 555px;
-    background-color: purple;
+    background-color: rgba(225,225,225,.1);
     border-radius: 16px;
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(225, 225, 225, .2);
     padding: 20px;
     color: #fff;
 }
@@ -106,4 +110,30 @@ body{
     display: flex;
     align-items: center;
     width: 50%;
+}
+.weather-details .humidity{
+    padding-left: 20px;
+    justify-content: flex-start;
+
+}
+.weather-details .wind{
+    padding-right: 20px;
+    justify-content: flex-end;
+
+}
+
+.weather-details i {
+    font-size: 56px;
+     margin-right: 10px;
+
+}
+.weather-details span {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 500;
+}
+.weather-details p {
+    font-size: 14px;
+    font-weight: 500;
+
 }
