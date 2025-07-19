@@ -5,7 +5,7 @@ const weatherDetails = document.querySelector('.weather-details');
 
 search.addEventListener('click', () => {
 
-    const APIKey = '98740f4ebc063bc0f8ba70090e5a091';
+    const APIKey = '4cf954a719d4ba5e67acd58a32bc199b';
     const city = document.querySelector('.search-box input').value;
 
     if (city == '')
@@ -23,11 +23,30 @@ search.addEventListener('click', () => {
 
     switch (json.weather[0].main) {
         case 'Clear':
-        image.src = 'images/clear.png';
+        image.src = 'sun.png';
         break;
 
-    default:
+        case 'Rain':
+        image.src = 'Rain.png';
         break;
+
+        case 'Snow':
+        image.src = 'Snow.png';
+        break;
+
+        case 'Clouds':
+        image.src = 'clouds.png';
+        break;
+
+        case 'Mist':
+        image.src = 'mist.png';
+        break;
+
+        case 'Haze':
+        image.src = 'haze.png';
+        break;
+    default:
+        image.src = 'cloudy.png';
     }
 
 
